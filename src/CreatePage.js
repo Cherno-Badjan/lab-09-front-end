@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { createCharacter } from './Api-utils.js';
+
 
 export default class CreatePage extends Component {
     //set state. Items were are tracking in state are columns in character table
@@ -20,8 +22,10 @@ export default class CreatePage extends Component {
     }
     handleGenderId = (e) => this.setState({ gender_id: Number(e.target.value) })
 
-    handleSubmit = (e) => {
+    handleSubmit = async (e) => {
         e.preventDefault();
+
+        await createCharacter(this.state);
 
         this.props.history.push('/characters');
     }

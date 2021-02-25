@@ -1,7 +1,7 @@
 //import superagent
 import request from 'superagent';
 
-const URL = 'https://powerful-citadel-06337.herokuapp.com/';
+const URL = 'https://powerful-citadel-06337.herokuapp.com';
 
 export async function getCharacters() {
     const response = await request.get(`${URL}/characters`);
@@ -20,7 +20,7 @@ export async function getCharacter(id) {
     return body;
 }
 export async function createCharacter(characterBits) {
-    const { body } = await (await request.post(`${URL}/characters`)).send(characterBits);
+    const { body } = await request.post(`${URL}/characters/`).send(characterBits);
 
     return body;
 }

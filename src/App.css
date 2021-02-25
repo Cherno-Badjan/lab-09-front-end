@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.character {
+  border: solid 1px black;
+  margin: 10px;
+}
+
+.links {
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}

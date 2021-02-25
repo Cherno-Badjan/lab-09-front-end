@@ -35,7 +35,7 @@ export default class App extends Component {
           </Switch>
         </Router>
         <footer>
-          Contact info goes here
+          Characters 2021
                 </footer>
       </div>
     )
