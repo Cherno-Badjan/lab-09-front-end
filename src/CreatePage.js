@@ -31,7 +31,7 @@ export default class CreatePage extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="create-form">
                 <form onSubmit={this.handleSubmit}>
                     <label>
                         First Name:
@@ -44,10 +44,6 @@ export default class CreatePage extends Component {
                     <label>
                         Age:
                         <input value={this.state.age} onChange={this.handleAgeChange} />
-                    </label>
-                    <label>
-                        Gender:
-                        <input value={this.state.gender} onChange={this.handleGender} />
                     </label>
                     <label>
                         Vegetarian?

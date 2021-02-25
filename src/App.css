@@ -52,3 +52,11 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+
+.create-form{
+  font-family: cursive;
+}
+
+body{
+  background-color: burlywood;
+}
